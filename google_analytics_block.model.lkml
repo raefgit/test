@@ -1,4 +1,4 @@
-connection: "bigquery-connectors-ga360"
+connection: "bq_enor_conn"
 
 # include all the views
 include: "*.view"
