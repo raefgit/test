@@ -322,7 +322,7 @@ view: totals_base {
   measure: timeonsite_average_per_session {
     label: "Time On Site Average Per Session"
     type: number
-    sql: 1.0 * ${timeonsite_total} / NULLIF(${ga_sessions.session_count},0) ;;
+    sql: 1.0 * ${timeonsite_total} / NULLIF(${ga_sessions.session_count},0) / 86400.0 ;;
     value_format: "h:mm:ss"
   }
 
